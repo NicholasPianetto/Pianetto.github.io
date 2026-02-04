@@ -102,17 +102,20 @@ a{
 
 
     footer{
-    font-family: Arial, sans- serif;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color:
-        #333;
-    color: #fff;
+    font-size: 1.2em;
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+    background-color: black;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
 
 
 
