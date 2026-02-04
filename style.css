@@ -11,9 +11,9 @@ header {
     align-items: center;
 }
 
-body {
+/* body {
   background-color: black;
-}
+} */
 .terminal {
   font-family: "Glass TTY VT220", "Courier New", monospace;
   color: #00ff00;
@@ -96,3 +96,4 @@ a{
     color: #fff;
 
 }
+
