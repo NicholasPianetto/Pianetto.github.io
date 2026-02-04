@@ -1,7 +1,8 @@
 header {
     font-size: 1.2em;
   font-family: "Glass TTY VT220", "Courier New", monospace;
-  color: #00ff00;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
     background-color: black;
     line-height: 1.6;
     margin-top: 15px;
@@ -16,7 +17,8 @@ body {
 }
 .terminal {
   font-family: "Glass TTY VT220", "Courier New", monospace;
-  color: #00ff00;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
   font-size: 15px;
   line-height: 1.2;
 }
@@ -45,21 +47,24 @@ nav ul {
 p1 {
     font-size: 30px;
   font-family: "Glass TTY VT220", "Courier New", monospace;
-  color: #00ff00;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
   font-size: 15px;
   line-height: 1.2;
 }
 
 h1 {
   font-family: "Glass TTY VT220", "Courier New", monospace;
-  color: #00ff00;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
   font-size: 15px;
   line-height: 1.2;
 }
 
 p {
   font-family: "Glass TTY VT220", "Courier New", monospace;
-  color: #00ff00;
+color: #00FF41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
   font-size: 15px;
   line-height: 1.2;
 }
@@ -92,6 +97,7 @@ a{
     color: #fff;
 
 }
+
 
 
 
