@@ -44,28 +44,24 @@ nav ul {
 
 p1 {
     font-size: 30px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    text-align: center;
-
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00ff00;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 h1 {
-    font-size: 50px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    text-align: center;
-
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00ff00;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00ff00;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 a{
@@ -96,4 +92,5 @@ a{
     color: #fff;
 
 }
+
 
