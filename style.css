@@ -1,7 +1,7 @@
 header {
     font-size: 1.2em;
-    color: #e61515;
-    font-family: 'Westminster', monospace;
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00ff00;
     background-color: black;
     line-height: 1.6;
     margin-top: 15px;
@@ -92,6 +92,7 @@ a{
     color: #fff;
 
 }
+
 
 
 
