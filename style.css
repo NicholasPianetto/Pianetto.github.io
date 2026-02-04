@@ -11,6 +11,16 @@ header {
     align-items: center;
 }
 
+body {
+  background-color: black;
+}
+.terminal {
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00ff00;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
 nav ul {
     font-size: 1.2em;
     color: #d81515;
@@ -84,4 +94,5 @@ a{
     background-color:
         #333;
     color: #fff;
+
 }
