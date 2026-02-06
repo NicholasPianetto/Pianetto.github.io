@@ -76,66 +76,20 @@ nav ul {
     justify-content: center;
 }
 
-.myh1class {
-    color: #063b74;
-}
-
-.mypclass {
-    color: #cd0505;
-}
-
-p1 {
-    font-size: 30px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-h1 {
-    font-size: 50px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-p {
-    font-size: 20px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-
-}
-
-a{
-     font-size: 50px;
-    font-family: 'Westminster', monospace;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
 .img {
     text-align: center;
 }
-
-
     footer{
-    font-family: Arial, sans- serif;
+  background-color: black;
+  font-family: "Glass TTY VT220", "Courier New", monospace;
+  color: #00FF41;
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
     margin: 0;
     padding: 0;
     max-width: 100%;
     text-align: center;
     padding: 10px;
-    background-color:
-        #333;
-    color: #fff;
 }
+
 
 
