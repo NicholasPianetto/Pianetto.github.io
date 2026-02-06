@@ -24,8 +24,6 @@ color: #00FF41;
 
 body {
   background-color: black;
-}
-.terminal {
   font-family: "Glass TTY VT220", "Courier New", monospace;
 color: #00FF41;
     text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
@@ -125,6 +123,7 @@ color: #00FF41;
     align-items: center;
 
 }
+
 
 
 
