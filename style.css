@@ -5,8 +5,8 @@ header {
   color: #00FF41;
   text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
     line-height: 1.6;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ body {
   font-size: 18px; /* Slightly larger for readability */
   line-height: 1.2;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   min-height: 100vh;
   position: relative; /* Necessary for the overlay to align */
 }
@@ -64,13 +64,13 @@ body::before {
 }
 
 nav ul {
-    font-size: 1.2em;
+    font-size: 40px;
     color: #d81515;
     line-height: 1.6;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
-    gap: 20px;
+    gap:35px;
     display: flex;
     list-style: none;
     justify-content: center;
