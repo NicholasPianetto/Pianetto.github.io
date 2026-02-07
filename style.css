@@ -3,7 +3,7 @@ header {
   background-color: black;
   font-family: "Glass TTY VT220", "Courier New", monospace;
   color: #00FF41;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+  text-shadow: 20px 20px 50px rgba(0, 255, 65, 0.6);
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,7 +35,7 @@ body {
   background-color: black;
   font-family: "Glass TTY VT220", "Courier New", monospace;
   color: #00FF41;
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+  text-shadow: 20px 20px 50px rgba(0, 255, 65, 0.6);
   font-size: 18px; /* Slightly larger for readability */
   line-height: 1.2;
   margin: 0;
