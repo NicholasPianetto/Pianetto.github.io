@@ -1,52 +1,22 @@
-/* Base Styles & CRT Animation Definitions */
-@keyframes flicker {
-  0% { opacity: 0.27861; }
-  5% { opacity: 0.34769; }
-  10% { opacity: 0.23604; }
-  /* ... simplified for brevity, feel free to add more steps ... */
-  100% { opacity: 0.25; }
-}
-
-@keyframes textShadow {
-  0% { text-shadow: 0.43899218338959586px 0 1px rgba(0,30,255,0.5), -0.43899218338959586px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
-  5% { text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
-  /* This creates the slight "color bleed" look */
-  100% { text-shadow: 0.43899218338959586px 0 1px rgba(0,30,255,0.5), -0.43899218338959586px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
-}
-
 body {
   background-color: black;
   font-family: "Glass TTY VT220", "Courier New", monospace;
   color: #00FF41;
-  /* Added textShadow animation here */
   animation: textShadow 1.6s infinite;
   font-size: 18px;
   line-height: 1.2;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
-/* THE CRT SCANLINES - Replacing body::before */
-body::before {
-  content: " ";
-  display: block;
-  position: fixed; /* Fixed so it stays over the viewport */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* The scanline pattern */
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-              linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 100;
-  background-size: 100% 2px, 3px 100%;
-  pointer-events: none;
-}
-
-/* THE CRT FLICKER - Using body::after */
+body::before,
 body::after {
   content: " ";
   display: block;
@@ -55,42 +25,69 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
+  pointer-events: none;
+}
+
+body::before {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 100;
+  background-size: 100% 2px, 3px 100%;
+}
+
+body::after {
   background: rgba(18, 16, 16, 0.1);
   opacity: 0;
   z-index: 101;
-  pointer-events: none;
   animation: flicker 0.15s infinite;
 }
 
 header {
+  width: 100%;
   font-size: 1.2em;
   background-color: black;
   color: #00FF41;
   line-height: 1.6;
-  margin: 10px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1; /* Keeps content below scanlines but above background */
+  z-index: 1;
+}
+
+main,
+.content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 nav ul {
   font-size: 40px;
   color: #d81515;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 0;
   gap: 35px;
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: left;
 }
 
 footer {
+  width: 100%;
+  text-align: center;
+  background-color: black;
   color: #00FF41;
   text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
-  text-align: center;
-  padding: 10px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 5;
+  margin-top: auto;
 }
 
 a:visited {
