@@ -13,30 +13,33 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start; 
 }
 
 #projects ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
   padding-left: 0;
 }
 
 #projects li::marker {
   content: ">>";
-  color: #00FF41; /* Or your red color #d81515 */
+  color: #00FF41; 
   font-family: "OCR A Extended", monospace;
 }
 
-/* This targets the NAV ONLY (ensures no markers here) */
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 35px;
+  font-size: 40px;
+  color: #d81515;
+  margin: 10px 0;
   padding: 0;
+  gap: 35px;
+  display: flex;
+  list-style: none;
+  justify-content: left;
 }
 
 nav li::marker {
-  content: ""; /* Forces no marker in the navbar */
+  content: "";
 }
 
 header {
@@ -64,17 +67,6 @@ main,
   box-sizing: border-box;
 }
 
-nav ul {
-  font-size: 40px;
-  color: #d81515;
-  margin: 10px 0;
-  padding: 0;
-  gap: 35px;
-  display: flex;
-  list-style: none;
-  justify-content: left;
-}
-
 footer {
   width: 100%;
   text-align: center;
@@ -99,6 +91,27 @@ a:visited:hover {
 }
 
 @media (max-width: 768px) {
-  .sidebar { display: none; }
-  .container { width: 100%; }
+  .sidebar { 
+    display: none; 
+  }
+  
+  .container { 
+    width: 100%; 
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    font-size: 22px; 
+    flex-direction: column; 
+    gap: 15px; 
+    align-items: center;
+  }
+
+  main, 
+  .content {
+    padding: 10px;
+  }
 }
