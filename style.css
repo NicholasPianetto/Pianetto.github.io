@@ -13,7 +13,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: left;
 }
 
 #projects ul {
@@ -23,19 +23,15 @@ body {
 
 #projects li::marker {
   content: ">>";
-  color: #00FF41; 
+  color: #00FF41;
   font-family: "OCR A Extended", monospace;
 }
 
 nav ul {
-  font-size: 40px;
-  color: #d81515;
-  margin: 10px 0;
-  padding: 0;
-  gap: 35px;
-  display: flex;
   list-style: none;
-  justify-content: left;
+  display: flex;
+  gap: 35px;
+  padding: 0;
 }
 
 nav li::marker {
@@ -67,6 +63,17 @@ main,
   box-sizing: border-box;
 }
 
+nav ul {
+  font-size: 40px;
+  color: #d81515;
+  margin: 10px 0;
+  padding: 0;
+  gap: 35px;
+  display: flex;
+  list-style: none;
+  justify-content: left;
+}
+
 footer {
   width: 100%;
   text-align: center;
@@ -88,30 +95,4 @@ a:visited {
 a:visited:hover {
   color: #FFA500;
   text-shadow: 0 0 20px rgba(255, 165, 0, 1);
-}
-
-@media (max-width: 768px) {
-  .sidebar { 
-    display: none; 
-  }
-  
-  .container { 
-    width: 100%; 
-  }
-
-  header {
-    padding: 10px 0;
-  }
-
-  nav ul {
-    font-size: 22px; 
-    flex-direction: column; 
-    gap: 15px; 
-    align-items: center;
-  }
-
-  main, 
-  .content {
-    padding: 10px;
-  }
 }
