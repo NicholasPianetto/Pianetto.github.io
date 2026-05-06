@@ -31,13 +31,24 @@ html {
     overflow-y: scroll;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
   gap: 35px;
   padding: 0;
-}
+} */
 
+/* nav ul {
+  font-size: 40px;
+  color: #d81515;
+  margin: 10px 0;
+  padding: 0;
+  gap: 35px;
+  display: flex;
+  list-style: none;
+  justify-content: left;
+} */
+ 
 nav li::marker {
   content: "";
 }
@@ -67,16 +78,7 @@ main,
   box-sizing: border-box;
 }
 
-nav ul {
-  font-size: 40px;
-  color: #d81515;
-  margin: 10px 0;
-  padding: 0;
-  gap: 35px;
-  display: flex;
-  list-style: none;
-  justify-content: left;
-}
+
 
 footer {
   width: 100%;
@@ -103,4 +105,29 @@ a:hover {
 
 a:active {
   color: #FFA500;
+}
+
+nav {
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
 }
