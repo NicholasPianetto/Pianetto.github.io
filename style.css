@@ -90,13 +90,17 @@ footer {
   margin-top: auto;
 }
 
-a:visited {
+a {
   color: #FF8C00;
   text-shadow: 0 0 5px rgba(255, 140, 0, 0.8);
   text-decoration: none;
 }
 
-a:visited:hover {
+a:hover {
   color: #FFA500;
   text-shadow: 0 0 20px rgba(255, 165, 0, 1);
+}
+
+a:active {
+  color: #FFA500;
 }
