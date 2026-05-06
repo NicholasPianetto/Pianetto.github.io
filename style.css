@@ -8,14 +8,13 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
   overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
 
+/* Projects list */
 #projects ul {
   list-style: none;
   padding-left: 0;
@@ -27,32 +26,17 @@ body {
   font-family: "OCR A Extended", monospace;
 }
 
+/* Always show scrollbar */
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-/* nav ul {
-  list-style: none;
-  display: flex;
-  gap: 35px;
-  padding: 0;
-} */
-
-/* nav ul {
-  font-size: 40px;
-  color: #d81515;
-  margin: 10px 0;
-  padding: 0;
-  gap: 35px;
-  display: flex;
-  list-style: none;
-  justify-content: left;
-} */
- 
+/* Remove nav markers */
 nav li::marker {
   content: "";
 }
 
+/* Header */
 header {
   width: 100%;
   font-size: 1.2em;
@@ -60,26 +44,26 @@ header {
   color: #00FF41;
   line-height: 1.6;
   padding: 20px 0;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
+  justify-content: flex-start;
+  padding-left: 240px;
 }
 
+/* Main content */
 main,
 .content {
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   box-sizing: border-box;
+  margin-left: 240px; 
 }
 
-
-
+/* Footer */
 footer {
   width: 100%;
   text-align: center;
@@ -87,11 +71,10 @@ footer {
   color: #00FF41;
   text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
   padding: 20px 0;
-  position: relative;
-  z-index: 5;
   margin-top: auto;
 }
 
+/* Links */
 a {
   color: #FF8C00;
   text-shadow: 0 0 5px rgba(255, 140, 0, 0.8);
@@ -107,27 +90,27 @@ a:active {
   color: #FFA500;
 }
 
+/* Navbar */
 nav {
-    position: fixed;
-    top: 150px;
-    left: 250px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 20px;
+  position: fixed;
+  top: 150px;
+  left: 180px;
+  width: 200px;
 }
 
+/* Nav list */
 nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav ul li a {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
