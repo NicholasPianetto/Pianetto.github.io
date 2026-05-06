@@ -27,6 +27,10 @@ body {
   font-family: "OCR A Extended", monospace;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 nav ul {
   list-style: none;
   display: flex;
