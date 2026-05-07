@@ -91,10 +91,31 @@ h1 {
   margin-bottom: 20px;
 }
 
+#projects ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+#projects li {
+  margin-bottom: 15px;
+}
+
+#projects a {
+  display: inline-block;
+  color: #FF8C00;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
 a,
 a:visited,
 a:active {
   color: #FF8C00 !important;
+  /* Forces the orange color */
   text-decoration: none;
 }
 
