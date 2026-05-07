@@ -9,17 +9,7 @@
 
     <link rel="stylesheet" href="../../style.css">
     <style>
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 40px;
-        }
 
-        footer {
-            clear: both;
-            text-align: center;
-            padding: 20px 0;
-        }
 
         .wrap-image {
             float: left;
@@ -39,40 +29,41 @@
    |_| \_|_|\___|_| |_|\___/  |_|\__,_|___/ |_|   |_|\__,_|_| |_|\___|\__|\__\___/
 
         </pre>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../../index.html" style="text-decoration: none;"> About Me </a></li>
-                <li><a href="../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
-                <li><a href="../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a></li>
-                <li><a href="../../contact.html" style="text-decoration: none;"> Contact </a></li>
-                <li><a href="../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="layout">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html" style="text-decoration: none;"> About Me </a></li>
+                    <li><a href="../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
+                    <li><a href="../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a>
+                    </li>
+                    <li><a href="../../contact.html" style="text-decoration: none;"> Contact </a></li>
+                    <li><a href="../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
+                </ul>
+            </nav>
 
-    <section id="projects">
-        <div class="container">
-            <div class="img">
-                <!-- <img src="project1.jpg" alt="Profile Photo"> -->
+        <section id="projects">
+            <div class="container">
+                <div class="img">
+                    <!-- <img src="project1.jpg" alt="Profile Photo"> -->
+                </div>
+                <h1> FPGA Development Board </h1>
+                <img src="FPGA6.jpg" alt="FPGA MachXO2 7000HC" class="wrap-image">
+
+                <p> This was my first FPGA board that I designed and is also one of my earlier boards. I learned a lot
+                    about
+                    board design when I made this FPGA breakout board.
+                </p>
+                <p>Specs consist of Lattice MachXO2 7000HC, four
+                    user-selectable
+                    voltage levels for the GPIO banks, and 1 player PONG (I wasn't able to make another controller).
+                    While the VGA works, this was an awfully designed PCB, but I
+                    learned from it =)</p>
+                <!-- <img src="FPGA1.png" alt="FPGA MachXO2 7000HC" class="wrap-image"> -->
+
+
             </div>
-            <h1> FPGA Development Board </h1>
-            <img src="FPGA6.jpg" alt="FPGA MachXO2 7000HC" class="wrap-image">
-
-            <p> This was my first FPGA board that I designed and is also one of my earlier boards. I learned a lot
-                about
-                board design when I made this FPGA breakout board.
-            </p>
-            <p>Specs consist of Lattice MachXO2 7000HC, four
-                user-selectable
-                voltage levels for the GPIO banks, and 1 player PONG (I wasn't able to make another controller).
-                While the VGA works, this was an awfully designed PCB, but I
-                learned from it =)</p>
-            <!-- <img src="FPGA1.png" alt="FPGA MachXO2 7000HC" class="wrap-image"> -->
-
-
-        </div>
-    </section>
+        </section>
+    </div>
     <br></br>
     <p style="text-align: center;">
         <a href="../../projects.html">Back To Projects</a>

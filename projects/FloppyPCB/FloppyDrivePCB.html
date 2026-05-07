@@ -9,17 +9,7 @@
 
     <link rel="stylesheet" href="../../style.css">
     <style>
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 40px;
-        }
 
-        footer {
-            clear: both;
-            text-align: center;
-            padding: 20px 0;
-        }
 
         .wrap-image {
             float: left;
@@ -40,35 +30,33 @@
    |_| \_|_|\___|_| |_|\___/  |_|\__,_|___/ |_|   |_|\__,_|_| |_|\___|\__|\__\___/
 
         </pre>
+    <div class="layout">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html" style="text-decoration: none;"> About Me </a></li>
+                    <li><a href="../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
+                    <li><a href="../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a>
+                    </li>
+                    <li><a href="../../contact.html" style="text-decoration: none;"> Contact </a></li>
+                    <li><a href="../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
+                </ul>
+            </nav>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../../index.html" style="text-decoration: none;"> About Me </a></li>
-                <li><a href="../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
-                <li><a href="../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a></li>
-                <li><a href="../../contact.html" style="text-decoration: none;"> Contact </a></li>
-                <li><a href="../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
-            </ul>
-        </nav>
-    </header>
+        <section id="projects">
+            <div class="container">
 
-    <section id="projects">
-        <div class="container">
-
-            <div class="img">
-                <!-- <img src="project1.jpg" alt="Profile Photo"> -->
+                <div class="img">
+                    <!-- <img src="project1.jpg" alt="Profile Photo"> -->
+                </div>
+                <h1> Floppy Drive Controller </h1>
+                <img src="floppy.png" alt="Floppy Drive Photo" class="wrap-image">
+                <p> This is a floppy drive controller I designed around an STM32 micro. This connects to a 5.25" floppy
+                    drive
+                    so that I can backup/ make copies of bootdisks for my older 8088 and 8086 machines.
+                </p>
             </div>
-            <h1> Floppy Drive Controller </h1>
-            <img src="floppy.png" alt="Floppy Drive Photo" class="wrap-image">
-            <p> This is a floppy drive controller I designed around an STM32 micro. This connects to a 5.25" floppy
-                drive
-                so that I can backup/ make copies of bootdisks for my older 8088 and 8086 machines.
-            </p>
-        </div>
-
-
-    </section>
+        </section>
+    </div>
     <br></br>
     <p style="text-align: center;">
         <a href="../../projects.html">Back To Projects</a>
