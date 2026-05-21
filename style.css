@@ -24,6 +24,9 @@ pre {
   text-align: center;
   margin: 20px 0 10px 0;
   font-size: 10px;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
 }
 
 .layout {
@@ -90,6 +93,7 @@ h1 {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+
 
 #projects ul {
   padding-left: 0;
