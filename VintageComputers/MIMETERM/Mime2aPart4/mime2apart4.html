@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        .wrap-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        .section {
+            display: block;
+            clear: both;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre style="font-size: 10px; text-align: center;">
+ ______   ________  ________   ___   __    ______   _________  _________  ______         ___   __    ______   _________  
+/_____/\ /_______/\/_______/\ /__/\ /__/\ /_____/\ /________/\/________/\/_____/\       /__/\ /__/\ /_____/\ /________/\ 
+\:::_ \ \\__.::._\/\::: _  \ \\::\_\\  \ \\::::_\/_\__.::.__\/\__.::.__\/\:::_ \ \      \::\_\\  \ \\::::_\/_\__.::.__\/ 
+ \:(_) \ \  \::\ \  \::(_)  \ \\:. `-\  \ \\:\/___/\  \::\ \     \::\ \   \:\ \ \ \   ___\:. `-\  \ \\:\/___/\  \::\ \   
+  \: ___\/  _\::\ \__\:: __  \ \\:. _    \ \\::___\/_  \::\ \     \::\ \   \:\ \ \ \ /__/\\:. _    \ \\::___\/_  \::\ \  
+   \ \ \   /__\::\__/\\:.\ \  \ \\. \`-\  \ \\:\____/\  \::\ \     \::\ \   \:\_\ \ \\::\ \\. \`-\  \ \\:\____/\  \::\ \ 
+    \_\/   \________\/ \__\/\__\/ \__\/ \__\/ \_____\/   \__\/      \__\/    \_____\/ \:_\/ \__\/ \__\/ \_____\/   \__\/ 
+
+        </pre>
+    <div class="layout">
+
+        <nav>
+            <ul>
+                <li><a href="../../../index.html" style="text-decoration: none;"> Home </a></li>
+                <li><a href="../../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
+                <li><a href="../../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a></li>
+                <li><a href="../../../contact.html" style="text-decoration: none;"> Contact </a></li>
+                <li><a href="../../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
+                <li><a href="../../../aboutme.html" style="text-decoration: none;"> About Me </a></li>
+            </ul>
+        </nav>
+
+        <section id="projects">
+            <div class="container">
+                <h1> MIME 2A Terminal [Part 3] Electronics Testing</h1>
+
+
+                <section class="section">
+                    <div>
+                        <p>
+                            Now to the fun stuff :)
+                        </p>
+
+                        <p>
+                            This post I WILL be turning the terminal on (finally!!!!). I decided to start with clearing
+                            the PCB
+                            and getting it prepped for testing. After I had removed the voltage regulators, I also
+                            removed the surrounding
+                            capacitors and resistor to clear off the rust that had settled in the area. Here is what the
+                            board looked like after I had cleared everything:
+                        </p>
+                        <img src="cleanedPCB.jpg" alt="They all look like this" class="wrap-image">
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div>
+                        <p>
+                            The rust was caked in pretty well, but with a little elbow grease I was able to get it
+                            removed (mostly).
+                            The next step was sourcing new LM340KC-12V and LM340KC-5.0V voltage regulators... but wait I
+                            am a broke college student
+                            and am trying to save money
+                            anywhere I can. These regulators are nearly $10 (each!), so I thought I would try to reuse
+                            the rusted voltage regulators. Turns out,
+                            they were very much recoverable and ended up working! Here is a before and after of the
+                            voltage regulators.
+                        </p>
+
+                        <p>Before:</p>
+                        <img src="IMayNeedToReplaceThese.jpg" alt="They all look like this" class="wrap-image">
+                        <p>After:</p>
+                        <img src="cleanedReg.jpg" alt="They all look like this" class="wrap-image">
+
+                        <p>
+                            I decided to test them using my benchtop powersupply. If you ever have one of these
+                            regulators, flipping them over you would see an "E" representing "Emitter" (the output) and
+                            the
+                            "B" representing "Base" (the input). The return voltage is the casing itself. If you ever
+                            reference the
+                            original datasheet, the labeling the manufacturer uses here is derived from the simplified
+                            voltage
+                            reference schematic, but it seems to contradict this fact as Vin = Collector and
+                            Vout = Emitter. I'm probably just misunderstanding this :/
+                        </p>
+
+                        <p>Anyways here is the 12V regulator being tested. They all worked just fine, which surpised me
+                            given the condition they were in.</p>
+                        <img src="testingTheRegulator.jpg" alt="They all look like this" class="wrap-image">
+
+
+
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div>
+                        <p>
+                            continuing tomorrow stay tuned...
+                        </p>
+                    </div>
+                </section>
+
+
+            </div>
+        </section>
+    </div>
+    <p style="text-align: center;">
+        <a href="../MimeTermPage.html">Back To Projects</a>
+    </p>
+    <footer>
+        <p>&copy;
+            2026 Nicholas Pianetto</p>
+    </footer>
+
+</body>
+
+</html>
