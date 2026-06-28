@@ -9,12 +9,14 @@
 
     <link rel="stylesheet" href="../../style.css">
     <style>
-        .wrap-image {
+        .wrap-image-left {
             display: block;
-            margin: 0 auto 20px auto;
+            float: left;
             width: 100%;
-            max-width: 800px;
+            max-width: 400px;
             height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px
         }
 
         .section {
@@ -63,18 +65,46 @@
                     <!-- <img src="project1.jpg" alt="Profile Photo"> -->
                 </div>
                 <h1> FPGA Development Board </h1>
-                <img src="FPGA6.jpg" alt="FPGA MachXO2 7000HC" class="wrap-image">
+                <img src="FPGA6.jpg" alt="FPGA MachXO2 7000HC" class="wrap-image-left">
 
-                <p> This was my first FPGA board that I designed and is also one of my earlier boards. I learned a lot
-                    about
-                    board design when I made this FPGA breakout board.
+                <p> This was my first FPGA board that I designed independently, and is also one of my earlier boards
+                    that I've
+                    designed
+                    in general. During my internship at Ag Leader, my coworker suggested making my own developemnt board
+                    since
+                    commerical FPGA development boards were out of my price range. Despite the headaches that come from
+                    a DIY project, I am glad that I decided to
+                    build my own. I learned so much from the design, prototype, and iteration process that a
+                    development board would never have exposed me to.
                 </p>
-                <p>Specs consist of Lattice MachXO2 7000HC, four
+                <p>
+                    Prior to this
+                    project I had expereience
+                    at Iowa State programming Terasic
+                    DE2-115's in
+                    Verilog for my intro to digital logic class. As for the hardware and circuit side of things, I had
+                    just taken EE201 (Circuits I), so I did not have much to go off of (well, this project was moreso
+                    digital logic circuitry, so I suppose not much analog knowledge would've been helpful anyways).
+                </p>
+
+                <p>This development board consists of a Lattice MachXO2 7000HC, four
                     user-selectable
-                    voltage levels for the GPIO banks, and 1 player PONG (I wasn't able to make another controller).
-                    While the VGA works, this was an awfully designed PCB, but I
-                    learned from it =)</p>
-                <!-- <img src="FPGA1.png" alt="FPGA MachXO2 7000HC" class="wrap-image"> -->
+                    voltage levels for the GPIO banks, and 1 player PONG (I wasn't able to make another controller, I
+                    pieced that together from a broken Perkin-Elmer Gauge Controller that I had bought from Iowa State's
+                    surplus :P).
+                    While all my features work, there's a lot with the board that I am not very pleased with when
+                    revisiting this project. A lack of a power switch, the awkward way my JTAG programmer plugs in
+                    (I designed the JTAG programm you see in the picture as well), and the terrible VGA video quality (putting it right next to the power
+                    area of the board with zero mindfulness for signal integrity was not a great idea). But I make
+                    mistakes and learn from them, so long as I don't make them again.</p>
+
+                <p>
+                    Since I've finished this project, I've applied what I learned here and have worked on much more
+                    ambitious
+                    projects such as my Lattice ECP5 HDMI board that I will add soon to my website (BGA soldering is not
+                    something I've
+                    done before, so it may take a while!).
+                </p>
 
 
             </div>
