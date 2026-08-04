@@ -9,7 +9,22 @@
 
     <link rel="stylesheet" href="../../style.css">
     <style>
+        .wrap-image {
+            display: block;
+            float: left;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px
+        }
 
+        .section {
+            display: block;
+            clear: both;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 
@@ -32,12 +47,13 @@
         88                                                                                                                                  
         </pre>
     <div class="layout">
+
         <nav>
             <ul>
                 <li><a href="../../index.html" style="text-decoration: none;"> Home </a></li>
                 <li><a href="../../projects.html" style="text-decoration: none;"> Embedded Projects </a></li>
                 <li><a href="../../vintageComputers.html" style="text-decoration: none;"> Vintage Computers </a></li>
-                 <li><a href="../../guitars.html" style="text-decoration: none;"> Guitars </a></li>               
+                <li><a href="../../guitars.html" style="text-decoration: none;"> Guitars </a></li>
                 <li><a href="../../contact.html" style="text-decoration: none;"> Contact </a></li>
                 <li><a href="../../cv/resume.html" style="text-decoration: none;"> My Resume </a></li>
                 <li><a href="../../aboutme.html" style="text-decoration: none;"> About Me </a></li>
@@ -47,42 +63,34 @@
 
         <section id="projects">
             <div class="container">
-                <h1> MicroTerm Mime 2A Terminals Repair </h1>
+                <div class="img">
+                    <!-- <img src="project1.jpg" alt="Profile Photo"> -->
+                </div>
+                <h1> Modern LM340KC Variable Voltage Regulator Replacement </h1>
+                <img src="lm340.jpg" alt="My Keyboard HID Controller" class="wrap-image">
 
-
-                <p>Here are my blog posts for the repairs of my Mime 2A terminals, made by MicroTerm. Not much is
-                    available
-                    online, and zero schematics or user manuals for this particular model are uploaded anywhere, so I
-                    have been repairing these
-                    based on
-                    both intuition and anaylsis. The first few posts are not as interesting and only cover the cosmetic
-                    aspects of the restoration, the latter posts delve into the electronic repairs. </p>
-                <ul>
-                    <li><a href="./Mime2a/mime2a.html" style="text-decoration: none;">[Part 1] Evaluating the Terminals
-                        </a></li>
-                    <li><a href="./Mime2aPart2/mime2apart2.html" style="text-decoration: none;">[Part 2] Cleaning the
-                            Terminals
-                        </a></li>
-                    <li><a href="./Mime2aPart3/mime2apart3.html" style="text-decoration: none;">[Part 3] Electronics
-                            Cleaning
-                        </a></li>
-
-                    <li><a href="./Mime2aPart4/mime2apart4.html" style="text-decoration: none;">[Part 4] Electronics
-                            Testing
-                        </a></li>
-
-                    <li><a href="./Mime2aPart5/mime2apart5.html" style="text-decoration: none;">[Part 5] Electronics
-                            Repairs (LIFE!!)
-                        </a></li>
-                    <!-- <li><a href="./Mime2aPart6/mime2apart5.html" style="text-decoration: none;">[Part 6] Analog Board and 2114 RAM
-                        </a></li> -->
-                </ul>
+                <p> This was made using a DC-DC buck convertor that I had designed and used for my Senior Design
+                    project in college. I figured I could reuse my schematic and redid the board layout for use as a
+                    more efficient replacement for a vintage voltage regulator. Pictured here is what the PCB looked
+                    like before I had gotten a B560 diode, I
+                    have since
+                    then installed the diode and it works well in my MicroTerm Mime 2A from the 80's. I have it sitting next to a (broken) LM340.
+                </p>
+                <p> This is designed with input filter capacitors rated for 25V, the MicroTerm 2A has a very crude diode
+                    rectifier power supply that turns the filtered 120VAC into 17VDC with slight ripple. This input line
+                    accepts this voltage just fine, and supplies the 12V and 5V in my vintage terminal using resistors
+                    to change the voltage output using feedback. I will get
+                    photographs when I am completed with this project.
+                </p>
             </div>
         </section>
     </div>
+    <br></br>
+    <p style="text-align: center;">
+        <a href="../../projects.html">Back To Projects</a>
+    </p>
     <footer>
         <p>&copy;
-
             2026 Nicholas Pianetto</p>
     </footer>
 
