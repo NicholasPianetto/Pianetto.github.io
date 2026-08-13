@@ -181,7 +181,7 @@ footer {
 
   @media (max-width: 850px) {
     .ascii-header {
-        font-size: 6px !important;
+        font-size: 4px !important;
         line-height: 1.1;
         overflow: hidden;
     }
