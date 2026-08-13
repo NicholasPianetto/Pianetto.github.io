@@ -179,7 +179,7 @@ footer {
     margin: 10px 0;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 800px) {
     .ascii-header {
         font-size: 4px !important;
         line-height: 1.1;
