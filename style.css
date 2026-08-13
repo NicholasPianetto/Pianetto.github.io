@@ -178,4 +178,12 @@ footer {
     padding: 0;
     margin: 10px 0;
   }
+
+  @media (max-width: 850px) {
+    .ascii-header {
+        font-size: 6px !important;
+        line-height: 1.1;
+        overflow: hidden;
+    }
+}
 }
