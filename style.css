@@ -89,16 +89,16 @@ section {
 
 h1 {
   margin-top: 0;
-  color: #FFFF;
-  border-bottom: 1px solid #FFFF;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 h2 {
-  color: #FFFF;
+  color: #FFFFFF;
 }
 
 p {
-  color: #FFFF;
+  color: #FFFFFF;
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -140,7 +140,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #00FF41;
+  color: #FFFFFF;
 }
 
 footer {
@@ -166,7 +166,7 @@ footer {
   nav {
     flex: 0 0 auto;
     text-align: center;
-    border-bottom: 1px solid #FFFF;
+    border-bottom: 1px solid #FFFFFF;
     width: 100%;
     padding-bottom: 20px;
   }
