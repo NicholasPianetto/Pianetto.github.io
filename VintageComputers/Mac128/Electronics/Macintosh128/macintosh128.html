@@ -71,28 +71,46 @@
                             uploaded to the internet and I will be relying on them heavily.
                         </p>
 
-                        <p> The first thing I will do is remove the rusted components from the board. The rear IO ports,
-                            FDD connector, single wipe sockets, and the rusted resistors and capacitors will be the
-                            first things desoldered
-                            from the motherboard. Here is what it looked like after I had gotten all of these removed
-                            from the motherboard.
-                        </p>
                     </div>
 
                 </section>
 
                 <section class="section">
                     <div>
-                        <p> I referenced the schematics and have replaced the resistors with their correct values on the
-                            motherboard making sure to check board revision version to avoid installing the wrong
-                            resistor values. I've installed the DB9 and the DB15 connectors that are used for the mouse,
-                            serial, and floppy drive connector and also installed machine holed IC sockets for better
-                            reliability since I found them for a very good price at Axe Man in Minneapolis. Here is what
-                            the new motherboard looks like.
-                        </p>
+                        <img src="ReadyToTurnOnMacintosh.jpg" alt="They all look like this" class="wrap-image">
 
-                        <p> Little note, Axe Man is a super cool shop and I highly recommend them.
+                        <p> The board here on the right side in the vertical position is the "analog board", and is what
+                            it looked like after repairs. The more
+                            accurate name, as silkscreened on the PCB, is
+                            the "MACINTOSH SWEEP/POWER SUPPLY", but analog board rolls off the tongue a lot better so I
+                            will be refering to it as that.
                         </p>
+                        <img src="macSchematic.jpg" alt="They all look like this" class="wrap-image">
+                        <p>
+                            I initially noticed both C25 and C26 (the +5V and +12V filter capacitors) were bulging and
+                            replaced them with equivalent 1000uF 35V capacitors. Other than this, the rest of the board
+                            looked good to power on. The floppy drive port on the rear of the Macintosh has the +/-12V
+                            and +5V power rails, so testing these voltages is fairly easy. The power supply is a
+                            switch-mode power supply, but is of the older variety and requires a load. Because I do not
+                            own any 5-10ohm resistors at 10W ratings, I decided to plug in the motherboard so that the
+                            powersupply could operate correctly. Well, it did something...
+                        </p>
+                        <img src="shortedComponentsMacintoshAnalog.png" alt="They all look like this"
+                            class="wrap-image">
+                        <p>
+                            Turning on the Macintosh for the first time I got a low frequency hum with my +12V line
+                            delivering ~2.5V and the +5V line with only ~0.8V, obviously way
+                            underspecced. Eventually, the Macintosh would no longer power on and was completelty dead.
+                            After removing the machine from mains, I tested for shorts and found a direct short on the
+                            +5V, +/-12V to ground. The high voltage side ("sweep") that handles the flyback transformer
+                            for the 15kV CRT voltage is dependent on the low voltage power supply, so I will start my
+                            way from the bottom and I will not be
+                            labeling it suspect for now. My naive conclusion is that the windings in the ASTEC
+                            157-0025-A (in blue) have shorted and are causing the voltage rails to fail. Another possible culprit
+                            could be diodes in the bridge rectifier. Checking these for shorts would be easy, and is a
+                            better starting point than purchasing a new transformer.</p>
+
+                            <p>My final semester of college is starting up, so I will not be able to return to this for a while :/</p>
                     </div>
 
                 </section>
