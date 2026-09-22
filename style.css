@@ -30,12 +30,10 @@ pre {
   overflow-x: auto;
   white-space: pre;
 
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.4) 70%,
-    #000000 100%
-  ), url("mac.jpg");
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.4) 70%,
+      #000000 100%), url("mac.jpg");
 
   background-size: cover;
   background-position: center top;
@@ -200,7 +198,7 @@ footer {
   }
 
   pre {
-    background-size: cover;
-    background-position: 50% top;
+    background-size: 180% auto;
+    background-position: center top;
   }
 }
