@@ -199,4 +199,8 @@ footer {
     overflow: hidden;
   }
 
+  pre {
+    background-size: cover;
+    background-position: 50% top;
+  }
 }
