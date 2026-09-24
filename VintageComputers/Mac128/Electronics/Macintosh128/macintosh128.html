@@ -106,11 +106,52 @@
                             for the 15kV CRT voltage is dependent on the low voltage power supply, so I will start my
                             way from the bottom and I will not be
                             labeling it suspect for now. My naive conclusion is that the windings in the ASTEC
-                            157-0025-A (in blue) have shorted and are causing the voltage rails to fail. Another possible culprit
+                            157-0025-A (in blue) have shorted and are causing the voltage rails to fail. Another
+                            possible culprit
                             could be diodes in the bridge rectifier. Checking these for shorts would be easy, and is a
                             better starting point than purchasing a new transformer.</p>
 
-                            <p>My final semester of college is starting up, so I will not be able to return to this for a while :/</p>
+                        <p>As I had finished some homework before nightfall arrived, and I figured that continuing to
+                            work on more labs and future
+                            homework would prove to be wasteful this deep into the night, I decided to continue on with
+                            the reapirs. I checked
+                            the entire motherboard for shorts, tested the bridge recitifer diodes in the primary
+                            windings section of the transformer in circuit, and finally reached a point
+                            where I needed to consult the Dead Mac Scrolls. The Dead Mac Scroll is a book published
+                            sometime in the 90's and covers the 128/512/Plus range of machines and details myriads of
+                            faults, common component failures, and general behavior of these machines. At this point, my
+                            Macintosh was dead as a door nail and I needed a bone thrown.</p>
+
+                        <p>Reading on some of the common problems, there was a suggested component, R52, that could fail
+                            due to the proximity to an inductor that generated heat. Overtime this heat would damage the
+                            resistor, causing it to go out of spec. Well I decided to measure the resistor in circuit
+                            and it measured 40Mohms. Nope, something is wrong and at this point I susptected it had
+                            failed open. Desoldering it from the circuit showed that it was no longer a 10k resistor and
+                            instead was acting as a short. </p>
+                        <img src="resistorReplaced.jpg" alt="They all look like this" class="wrap-image">
+
+                        <p>I replaced it with a 1/2W 10kOhm resistor, powered on the machine and...</p>
+
+                        <img src="theMacIsAlive.jpg" alt="They all look like this" class="wrap-image">
+
+                        <p>The Macintosh finally powers on for the first time in likely 32 years. This machine went from
+                            being
+                            stored in an abandoned office for most its life, open to the elements in the brutal Iowa
+                            weather, and
+                            to being able to power on (well, sort of). First of all, this screen is not good. We should
+                            be seeing a Happy Mac bootup screen + chime.</p>
+                        <img src="ClearnerPictyre.jpg" alt="They all look like this" class="wrap-image">
+                        <p>Second, this win did not last long. After a while of the machine being powered, I went to put
+                            the casing back on and the screen decided to no longer display anything. Brightness did
+                            nothing, it would simply briefly flash on startup, black screen, then flash when powered
+                            off. Bad connection with the wiring harness? I thought that might be the problem, but
+                            shaking, hitting, readjusting the PCB and harness did nothing. The heater filament in the
+                            neck was indeed glowing, and I was getting good 5V and +/-12V. Then I began hearing a loud
+                            high pitch squeeling, and at this point I decided to call it a night. I suspect the flyback
+                            may be failing, but I want to replace all the capacitors before I jump to that conclusion,
+                            but this will have to wait for now as I am very busy with school at the moment.</p>
+
+
                     </div>
 
                 </section>
