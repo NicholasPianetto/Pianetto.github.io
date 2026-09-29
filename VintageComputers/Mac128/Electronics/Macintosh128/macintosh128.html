@@ -140,7 +140,7 @@
                             weather, and
                             to being able to power on (well, sort of). First of all, this screen is not good. We should
                             be seeing a Happy Mac bootup screen + chime.</p>
-                        <img src="ClearnerPictyre.jpg" alt="They all look like this" class="wrap-image">
+                        <img src="ClearnerPictyre.jpg" alt="Clear CRT picture" class="wrap-image">
                         <p>Second, this win did not last long. After a while of the machine being powered, I went to put
                             the casing back on and the screen decided to no longer display anything. Brightness did
                             nothing, it would simply briefly flash on startup, black screen, then flash when powered
@@ -150,9 +150,29 @@
                             high pitch squeeling, and at this point I decided to call it a night. I suspect the flyback
                             may be failing, but I want to replace all the capacitors before I jump to that conclusion,
                             but this will have to wait for now as I am very busy with school at the moment.</p>
-
+                        <p> I came back to the Macinotsh after a little while, I just couldn't sleep without testing
+                            further, and was curious to see if perhaps I might
+                            have a bad solder joint somewhere on the board(s). With the entire system assmebled, I
+                            powered it on and it gave a
+                            high pitch squeal, I then proceeded to bang and hit the shell of the Macintosh and
+                            surprsingly the sound went away, and the screen picture came back on(?!).</p>
+                        <img src="CleanedROMHILOW.jpg" alt="The HI LO ROMS" class="wrap-image">
+                        <p>Further investigating, I decided to use some contact cleaner on the ROM HI/LOW sockets since
+                            the screen I saw on the initial power on test showed (likely) zero code being executed
+                            meaning perhaps a ROM was not seated or making good contact. Once I did that, I was able to
+                            get something that looked vaguely digital:</p>
+                        <img src="DigitalBootScreen.jpg" alt="Digital boot screen" class="wrap-image">
+                        <p>It does not resemble anything, but it looks like some pattern being replicated many times. I
+                            wonder if system memory decoding circuitry is bugged or if I have bad memory (but if I had
+                            bad memory, the ROMS would give me an error code showing where the bad memory was, right?!).
+                            While I hate doing a shotgun approach at replacing capacitors, I may have to do this on BOTH
+                            the logic board as well as the analog board since I am now noticing fluctuating analog board
+                            values, which is annoying since replacing capacitors at this scale is both time consuming,
+                            and is not a targeted repair.
+                        </p>
 
                     </div>
+
 
                 </section>
             </div>
