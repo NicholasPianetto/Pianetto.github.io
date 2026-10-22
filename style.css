@@ -1,10 +1,14 @@
 :root {
   --bg-color: #000000;
-  --text-main: #00FF41;
-  --text-heading: #FFFFFF;
-  --accent-color: #FF8C00;
+  --text-main: #00FF41;      /* Green accent for logo/glow */
+  --text-body: #D1D5DB;      /* Light Grey for body text & hyperlinks */
+  --text-heading: #FFFFFF;   /* Pure White for headings & hover states */
+  --accent-color: #FF8C00;   
   --accent-hover: #FFA500;
   --font-mono: "JetBrains Mono", monospace;
+  
+  --content-max-width: 800px;
+  --logo-font-size: 7px;
 }
 
 *,
@@ -21,15 +25,14 @@ body {
 
 html {
   overflow-y: scroll;
-  zoom: 95%;
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-main);
+  color: var(--text-body);
   font-family: var(--font-mono);
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: clamp(0.95rem, 1vw + 0.8rem, 1.1rem);
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -37,39 +40,43 @@ body {
 }
 
 h1,
-h2,
-p {
+h2 {
   color: var(--text-heading);
 }
 
-h1,
 p {
+  color: var(--text-body);
   font-family: var(--font-mono);
 }
 
 h1 {
   margin-top: 0;
   border-bottom: 1px solid var(--text-heading);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
 a,
 a:visited,
 a:active {
-  color: var(--accent-color);
+  color: var(--text-body);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--accent-hover);
+  color: var(--text-heading);
   text-decoration: underline;
 }
 
-pre {
+/* Specific ASCII Header Styling (won't affect standard images/GIFs) */
+.ascii-header {
+  color: var(--text-main);
   text-align: center;
   margin: 0;
-  padding: 20px 0 40px 0;
-  font-size: 10px;
+  padding: 0.5rem 0;
+  font-size: var(--logo-font-size);
+  line-height: 1.1;
+  letter-spacing: 0px;
   max-width: 100%;
   overflow-x: auto;
   white-space: pre;
@@ -79,51 +86,62 @@ pre {
     0 0 12px var(--text-main);
 }
 
+/* GIF / Image responsiveness rule */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Main Layout Container --- */
+
 .layout {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem 1.5rem;
   width: 100%;
 }
 
-.layout::after {
-  content: "";
-  flex: 0 0 200px;
-  pointer-events: none;
-}
-
+/* Horizontal Top Navigation Bar */
 nav {
-  flex: 0 0 200px;
-  text-align: right;
+  width: 100%;
   position: sticky;
-  top: 20px;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 100;
+  padding-bottom: 0.5rem;
 }
 
 nav ul {
   list-style: none;
-  margin: 20px;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
 }
 
 nav a {
-  display: block;
+  display: inline-block;
   white-space: nowrap;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
 }
 
 nav a:hover {
   color: var(--text-heading);
 }
 
+/* Main Section Content */
 section {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +150,7 @@ section {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: var(--content-max-width);
   text-align: left;
 }
 
@@ -143,7 +161,7 @@ section {
 }
 
 #projects li {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 #projects a {
@@ -152,42 +170,36 @@ section {
 
 footer {
   text-align: center;
-  padding: 40px 0 20px 0;
+  padding: 2rem 1rem 1rem 1rem;
   margin-top: auto;
-  font-size: 14px;
+  font-size: 0.85rem;
   opacity: 0.8;
+  color: var(--text-body);
 }
 
-@media (max-width: 850px) {
+/* --- Responsive Breakpoints --- */
+
+@media (max-width: 1024px) {
+  :root {
+    --logo-font-size: 5px;
+  }
+
   .layout {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .layout::after {
-    display: none;
-  }
-
-  nav {
-    flex: 0 0 auto;
-    text-align: center;
-    border-bottom: 1px solid var(--text-heading);
-    width: 100%;
-    padding-bottom: 20px;
+    gap: 0.75rem;
+    padding: 0.75rem;
   }
 
   nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 10px 0;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --logo-font-size: 3.5px;
   }
 
-  .ascii-header {
-    font-size: 4px !important;
-    line-height: 1.1;
-    overflow: hidden;
+  nav ul {
+    gap: 1.25rem;
   }
 }
