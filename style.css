@@ -55,10 +55,12 @@ h1 {
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
+/* Hyperlinks are now bold */
 a,
 a:visited,
 a:active {
   color: var(--text-body);
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -68,7 +70,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Specific ASCII Header Styling (won't affect standard images/GIFs) */
+/* Specific ASCII Header Styling */
 .ascii-header {
   color: var(--text-main);
   text-align: center;
@@ -86,7 +88,7 @@ a:hover {
     0 0 12px var(--text-main);
 }
 
-/* GIF / Image responsiveness rule */
+/* Responsive images without forcing centered block layout */
 img {
   max-width: 100%;
   height: auto;
